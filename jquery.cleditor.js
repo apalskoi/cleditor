@@ -809,6 +809,9 @@
 
     // Load the iframe document content
     var contentWindow = $frame[0].contentWindow,
+    if (!contentWindow) {
+      return;
+    }
       doc = editor.doc = contentWindow.document,
       $doc = $(doc);
 
