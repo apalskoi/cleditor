@@ -812,7 +812,7 @@
     if (!contentWindow) {
       return;
     }
-      doc = editor.doc = contentWindow.document,
+    var  doc = editor.doc = contentWindow.document,
       $doc = $(doc);
 
     doc.open();
