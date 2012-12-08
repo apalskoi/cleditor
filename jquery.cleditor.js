@@ -808,7 +808,7 @@
       .appendTo($main);
 
     // Load the iframe document content
-    var contentWindow = $frame[0].contentWindow,
+    var contentWindow = $frame[0].contentWindow;
     if (!contentWindow) {
       return;
     }
